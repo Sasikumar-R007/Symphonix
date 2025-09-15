@@ -1,4 +1,4 @@
-modules = ["nodejs-20"]
+modules = ["nodejs-20", "web"]
 [agent]
 expertMode = true
 
@@ -21,23 +21,23 @@ args = "Symphonix Portfolio"
 name = "Symphonix Portfolio"
 author = "agent"
 
+[workflows.workflow.metadata]
+outputType = "webview"
+
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "npm run dev"
 waitForPort = 5000
-
-[workflows.workflow.metadata]
-outputType = "webview"
 
 [[ports]]
 localPort = 5000
 externalPort = 80
 
 [[ports]]
-localPort = 36481
+localPort = 45297
 externalPort = 3000
 
 [deployment]
 deploymentTarget = "autoscale"
-run = ["npx", "serve", "-s", "dist", "-l", "5000"]
+run = ["npx", "serve", "-s", "dist"]
 build = ["npm", "run", "build"]
