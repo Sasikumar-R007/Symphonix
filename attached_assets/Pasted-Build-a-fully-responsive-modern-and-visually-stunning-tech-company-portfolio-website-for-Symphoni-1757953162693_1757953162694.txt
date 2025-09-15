@@ -1,0 +1,45 @@
+Build a fully responsive, modern, and visually stunning tech company portfolio website for "Symphonix".
+
+Requirements:
+
+Design Style: Clean, futuristic, professional look with a white, gray, and black color palette.
+
+Animations: Smooth page transitions, parallax scrolling, hover effects, and micro-interactions that make the site feel alive.
+
+Loading Animation: Include a beautiful preloader animation with the Symphonix name/logo before the site loads.
+
+Sections:
+
+Hero Section: Eye-catching landing section with animated headline, tagline, and a call-to-action button.
+
+About Us: Short but powerful description of Symphonix with subtle scroll animations.
+
+Services: Grid layout with cards for services like web/app development, UI/UX design, SEO, logo design, and growth strategies. Each card should have hover animations.
+
+Portfolio/Projects: Showcase previous projects with image thumbnails, hover effects, and lightbox or modal view.
+
+Team Section: Beautiful team member cards with photos, names, roles, and social links.
+
+Testimonials/Clients: Carousel or slider for testimonials from clients with smooth transitions.
+
+Contact Form: Working form with name, email, message fields, and submit button with success animation.
+
+Footer: Minimal footer with social media links and copyright.
+
+Navigation: Sticky navbar with smooth scroll to sections and animated burger menu for mobile.
+
+Performance: Fast-loading, SEO-friendly, fully responsive on mobile, tablet, and desktop.
+
+Tech Stack: Use React + Tailwind CSS (or Next.js if possible) for a modern, scalable setup.
+
+Extra Touches:
+
+Glassmorphism or subtle gradients where appropriate.
+
+Animated counters for stats (e.g., projects completed, clients served).
+
+Subtle background particle effect or animated shapes in hero section for visual interest.
+
+Dark mode toggle if possible.
+
+Make the final result look like a high-end SaaS or tech company landing page with smooth user experience, professional animations, and a "wow" factor that impresses visitors.
