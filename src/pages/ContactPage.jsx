@@ -16,7 +16,8 @@ import {
   Headphones
 } from 'lucide-react'
 
-const Contact = () => {
+const ContactPage = () => {
+  console.log('CONTACT_OK_2025-09-15_T1')
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -161,6 +162,7 @@ const Contact = () => {
                 <Mail className="w-5 h-5 text-white" />
               </div>
               <span className="text-purple-400 font-medium">Contact</span>
+              <span data-proof="CONTACT_OK_2025-09-15_T1" className="hidden">Proof</span>
             </div>
             
             <motion.h1 {...fadeInUp} className="text-5xl md:text-6xl font-bold mb-6">
@@ -548,4 +550,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default ContactPage

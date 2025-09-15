@@ -8,7 +8,7 @@ import About from './pages/About'
 import Blog from './pages/Blog'
 import Pricing from './pages/Pricing'
 import Features from './pages/Features'
-import Contact from './pages/Contact'
+import ContactPage from './pages/ContactPage'
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -41,7 +41,7 @@ function App() {
                   <Route path="blog" element={<Blog />} />
                   <Route path="pricing" element={<Pricing />} />
                   <Route path="features" element={<Features />} />
-                  <Route path="contact" element={<Contact />} />
+                  <Route path="contact" element={<ContactPage />} />
                 </Route>
               </Routes>
             </motion.div>
