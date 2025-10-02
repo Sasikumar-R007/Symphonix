@@ -118,15 +118,15 @@ const Features = () => {
     <div className="min-h-screen bg-gray-900 text-white">
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 px-4 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-cyan-900/20 to-transparent"></div>
         
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center">
             <div className="flex items-center justify-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center">
+              <div className="w-8 h-8 bg-cyan-600 rounded-lg flex items-center justify-center">
                 <Zap className="w-5 h-5 text-white" />
               </div>
-              <span className="text-purple-400 font-medium">Features</span>
+              <span className="text-cyan-400 font-medium">Features</span>
             </div>
             
             <motion.h1 {...fadeInUp} className="text-5xl md:text-6xl font-bold mb-6">
@@ -151,7 +151,7 @@ const Features = () => {
                 <span>Start Free Trial</span>
                 <ArrowRight className="w-5 h-5" />
               </Link>
-              <button className="text-purple-400 hover:text-purple-300 inline-flex items-center space-x-2 transition-colors duration-200">
+              <button className="text-cyan-400 hover:text-cyan-300 inline-flex items-center space-x-2 transition-colors duration-200">
                 <Eye className="w-5 h-5" />
                 <span>Watch Demo</span>
               </button>
@@ -181,9 +181,9 @@ const Features = () => {
                   className={index % 2 === 1 ? 'lg:order-2' : ''}
                 >
                   <div className="aspect-video bg-gray-800 rounded-xl overflow-hidden">
-                    <div className="w-full h-full bg-gradient-to-br from-purple-600/20 to-transparent flex items-center justify-center">
+                    <div className="w-full h-full bg-gradient-to-br from-cyan-600/20 to-transparent flex items-center justify-center">
                       <div className="text-center">
-                        <TrendingUp className="w-16 h-16 text-purple-400 mx-auto mb-4" />
+                        <TrendingUp className="w-16 h-16 text-cyan-400 mx-auto mb-4" />
                         <h3 className="text-2xl font-bold">{feature.title}</h3>
                       </div>
                     </div>
@@ -199,7 +199,7 @@ const Features = () => {
                   <p className="text-xl text-gray-300 mb-6">{feature.description}</p>
                   <Link 
                     to="/contact" 
-                    className="inline-flex items-center space-x-2 text-purple-400 hover:text-purple-300 transition-colors duration-200"
+                    className="inline-flex items-center space-x-2 text-cyan-400 hover:text-cyan-300 transition-colors duration-200"
                   >
                     <span>Learn More</span>
                     <ArrowRight className="w-4 h-4" />
@@ -229,9 +229,9 @@ const Features = () => {
                 key={index}
                 {...fadeInUp}
                 transition={{ delay: index * 0.1 }}
-                className="glass-card p-8 hover:border-purple-500/50 transition-colors duration-300 group"
+                className="glass-card p-8 hover:border-cyan-500/50 transition-colors duration-300 group"
               >
-                <div className="text-purple-400 mb-6 group-hover:scale-110 transition-transform duration-200">
+                <div className="text-cyan-400 mb-6 group-hover:scale-110 transition-transform duration-200">
                   {feature.icon}
                 </div>
                 <h3 className="text-xl font-bold mb-4">{feature.title}</h3>
@@ -240,7 +240,7 @@ const Features = () => {
                 <div className="space-y-2">
                   {feature.benefits.map((benefit, benefitIndex) => (
                     <div key={benefitIndex} className="flex items-center space-x-2 text-sm text-gray-400">
-                      <div className="w-1.5 h-1.5 bg-purple-400 rounded-full"></div>
+                      <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full"></div>
                       <span>{benefit}</span>
                     </div>
                   ))}
@@ -256,7 +256,7 @@ const Features = () => {
         <div className="max-w-7xl mx-auto">
           <motion.div {...fadeInUp} className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-6">
-              Why Choose <span className="gradient-text">Saatify</span>
+              Why Choose <span className="gradient-text">Symphonix</span>
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               Advanced capabilities that set us apart from traditional financial management tools.
@@ -268,7 +268,7 @@ const Features = () => {
               <div key={index} className="grid lg:grid-cols-2 gap-12 items-center">
                 <motion.div {...fadeInUp} transition={{ delay: index * 0.2 }}>
                   <div className="flex items-center space-x-2 mb-4">
-                    <span className="text-purple-400 font-medium text-sm uppercase tracking-wide">
+                    <span className="text-cyan-400 font-medium text-sm uppercase tracking-wide">
                       {benefit.category}
                     </span>
                   </div>
@@ -278,7 +278,7 @@ const Features = () => {
                   <div className="space-y-3">
                     {benefit.features.map((feature, featureIndex) => (
                       <div key={featureIndex} className="flex items-center space-x-3">
-                        <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
+                        <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
                         <span className="text-gray-300">{feature}</span>
                       </div>
                     ))}
@@ -290,9 +290,9 @@ const Features = () => {
                   transition={{ delay: index * 0.2 + 0.1 }}
                   className="aspect-video bg-gray-800 rounded-xl overflow-hidden"
                 >
-                  <div className="w-full h-full bg-gradient-to-br from-purple-600/20 to-transparent flex items-center justify-center">
+                  <div className="w-full h-full bg-gradient-to-br from-cyan-600/20 to-transparent flex items-center justify-center">
                     <div className="text-center">
-                      <div className="w-16 h-16 bg-purple-600 rounded-lg flex items-center justify-center mx-auto mb-4">
+                      <div className="w-16 h-16 bg-cyan-600 rounded-lg flex items-center justify-center mx-auto mb-4">
                         {benefit.category === "Automation" && <Zap className="w-8 h-8 text-white" />}
                         {benefit.category === "Collaboration" && <Users className="w-8 h-8 text-white" />}
                         {benefit.category === "Security" && <Shield className="w-8 h-8 text-white" />}
@@ -325,9 +325,9 @@ const Features = () => {
                 key={index}
                 {...fadeInUp}
                 transition={{ delay: index * 0.1 }}
-                className="glass-card p-6 text-center hover:border-purple-500/50 transition-colors duration-300"
+                className="glass-card p-6 text-center hover:border-cyan-500/50 transition-colors duration-300"
               >
-                <div className="text-purple-400 mb-4 flex justify-center">
+                <div className="text-cyan-400 mb-4 flex justify-center">
                   {integration.icon}
                 </div>
                 <h3 className="text-lg font-semibold mb-2">{integration.name}</h3>
@@ -345,8 +345,8 @@ const Features = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div {...fadeInUp}>
               <div className="flex items-center space-x-2 mb-4">
-                <Smartphone className="w-5 h-5 text-purple-400" />
-                <span className="text-purple-400 font-medium">Mobile App</span>
+                <Smartphone className="w-5 h-5 text-cyan-400" />
+                <span className="text-cyan-400 font-medium">Mobile App</span>
               </div>
               <h2 className="text-4xl font-bold mb-6">
                 Manage Finances<br />
@@ -393,9 +393,9 @@ const Features = () => {
 
             <motion.div {...fadeInUp} transition={{ delay: 0.2 }}>
               <div className="aspect-square bg-gray-800 rounded-xl overflow-hidden">
-                <div className="w-full h-full bg-gradient-to-br from-purple-600/20 to-transparent flex items-center justify-center">
+                <div className="w-full h-full bg-gradient-to-br from-cyan-600/20 to-transparent flex items-center justify-center">
                   <div className="text-center">
-                    <Smartphone className="w-24 h-24 text-purple-400 mx-auto mb-6" />
+                    <Smartphone className="w-24 h-24 text-cyan-400 mx-auto mb-6" />
                     <h3 className="text-2xl font-bold">Mobile Dashboard</h3>
                   </div>
                 </div>
@@ -406,14 +406,14 @@ const Features = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 bg-gradient-to-r from-purple-900/50 to-transparent">
+      <section className="py-20 px-4 bg-gradient-to-r from-cyan-900/50 to-transparent">
         <div className="max-w-7xl mx-auto text-center">
           <motion.div {...fadeInUp}>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Ready to Experience These Features?
             </h2>
             <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
-              Start your free trial today and discover how Saatify can transform your financial management experience.
+              Start your free trial today and discover how Symphonix can transform your business with innovative technology solutions.
             </p>
             <Link
               to="/contact"

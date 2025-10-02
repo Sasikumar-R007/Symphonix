@@ -68,13 +68,13 @@ const About = () => {
     <div className="min-h-screen bg-gray-900 text-white">
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 px-4 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-cyan-900/20 to-transparent"></div>
         
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center mb-16">
             <div className="flex items-center justify-center space-x-2 mb-4">
-              <Users className="w-5 h-5 text-purple-400" />
-              <span className="text-purple-400 font-medium">About</span>
+              <Users className="w-5 h-5 text-cyan-400" />
+              <span className="text-cyan-400 font-medium">About</span>
             </div>
             <motion.h1 {...fadeInUp} className="text-5xl md:text-6xl font-bold mb-6">
               We Support Companies to<br />
@@ -94,7 +94,7 @@ const About = () => {
             <div className="grid grid-cols-2 md:grid-cols-6 gap-4 mb-16">
               {[1, 2, 3, 4, 5, 6].map((i) => (
                 <div key={i} className="aspect-video bg-gray-800 rounded-lg flex items-center justify-center">
-                  <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-purple-700 rounded-lg flex items-center justify-center">
+                  <div className="w-12 h-12 bg-gradient-to-r from-cyan-500 to-cyan-700 rounded-lg flex items-center justify-center">
                     <TrendingUp className="w-6 h-6 text-white" />
                   </div>
                 </div>
@@ -131,8 +131,8 @@ const About = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div {...fadeInUp}>
               <div className="flex items-center space-x-2 mb-4">
-                <Check className="w-5 h-5 text-purple-400" />
-                <span className="text-purple-400 font-medium">Mission</span>
+                <Check className="w-5 h-5 text-cyan-400" />
+                <span className="text-cyan-400 font-medium">Mission</span>
               </div>
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
                 Focused on<br />
@@ -161,16 +161,16 @@ const About = () => {
             <motion.div {...fadeInUp} transition={{ delay: 0.2 }}>
               <div className="relative">
                 <div className="aspect-video bg-gray-800 rounded-xl overflow-hidden">
-                  <div className="w-full h-full bg-gradient-to-br from-purple-600/20 to-transparent flex items-center justify-center">
+                  <div className="w-full h-full bg-gradient-to-br from-cyan-600/20 to-transparent flex items-center justify-center">
                     <div className="text-center">
-                      <TrendingUp className="w-16 h-16 text-purple-400 mx-auto mb-4" />
+                      <TrendingUp className="w-16 h-16 text-cyan-400 mx-auto mb-4" />
                       <h3 className="text-2xl font-bold">Financial Dashboard</h3>
                     </div>
                   </div>
                 </div>
-                <div className="absolute -bottom-4 -right-4 bg-purple-600 rounded-xl p-4">
+                <div className="absolute -bottom-4 -right-4 bg-cyan-600 rounded-xl p-4">
                   <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center">
-                    <Trophy className="w-6 h-6 text-purple-600" />
+                    <Trophy className="w-6 h-6 text-cyan-600" />
                   </div>
                 </div>
               </div>
@@ -206,9 +206,9 @@ const About = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div {...fadeInUp}>
               <div className="aspect-video bg-gray-800 rounded-xl overflow-hidden mb-8">
-                <div className="w-full h-full bg-gradient-to-br from-purple-600/20 to-transparent flex items-center justify-center">
+                <div className="w-full h-full bg-gradient-to-br from-cyan-600/20 to-transparent flex items-center justify-center">
                   <div className="text-center">
-                    <Award className="w-16 h-16 text-purple-400 mx-auto mb-4" />
+                    <Award className="w-16 h-16 text-cyan-400 mx-auto mb-4" />
                     <h3 className="text-2xl font-bold">Analytics Dashboard</h3>
                   </div>
                 </div>
@@ -217,8 +217,8 @@ const About = () => {
 
             <motion.div {...fadeInUp} transition={{ delay: 0.2 }}>
               <div className="flex items-center space-x-2 mb-4">
-                <Trophy className="w-5 h-5 text-purple-400" />
-                <span className="text-purple-400 font-medium">Achievements</span>
+                <Trophy className="w-5 h-5 text-cyan-400" />
+                <span className="text-cyan-400 font-medium">Achievements</span>
               </div>
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
                 Emphasize<br />
@@ -252,8 +252,8 @@ const About = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <div className="flex items-center justify-center space-x-2 mb-4">
-              <Star className="w-5 h-5 text-purple-400" />
-              <span className="text-purple-400 font-medium">Action</span>
+              <Star className="w-5 h-5 text-cyan-400" />
+              <span className="text-cyan-400 font-medium">Action</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Our <span className="gradient-text">Actions</span>
@@ -270,10 +270,10 @@ const About = () => {
                   key={index}
                   {...fadeInUp}
                   transition={{ delay: index * 0.1 }}
-                  className="glass-card p-6 hover:border-purple-500/50 transition-colors duration-300"
+                  className="glass-card p-6 hover:border-cyan-500/50 transition-colors duration-300"
                 >
                   <div className="flex items-start space-x-4">
-                    <div className="text-purple-400 mt-1">
+                    <div className="text-cyan-400 mt-1">
                       {action.icon}
                     </div>
                     <div>
@@ -291,17 +291,17 @@ const About = () => {
             <motion.div {...fadeInUp} transition={{ delay: 0.4 }}>
               <div className="space-y-4">
                 <div className="aspect-video bg-gray-800 rounded-xl overflow-hidden">
-                  <div className="w-full h-full bg-gradient-to-br from-purple-600/20 to-transparent flex items-center justify-center">
+                  <div className="w-full h-full bg-gradient-to-br from-cyan-600/20 to-transparent flex items-center justify-center">
                     <div className="text-center">
-                      <Target className="w-16 h-16 text-purple-400 mx-auto mb-4" />
+                      <Target className="w-16 h-16 text-cyan-400 mx-auto mb-4" />
                       <h3 className="text-2xl font-bold">Revenue Analytics</h3>
                     </div>
                   </div>
                 </div>
                 <div className="aspect-video bg-gray-800 rounded-xl overflow-hidden">
-                  <div className="w-full h-full bg-gradient-to-br from-purple-600/20 to-transparent flex items-center justify-center">
+                  <div className="w-full h-full bg-gradient-to-br from-cyan-600/20 to-transparent flex items-center justify-center">
                     <div className="text-center">
-                      <TrendingUp className="w-16 h-16 text-purple-400 mx-auto mb-4" />
+                      <TrendingUp className="w-16 h-16 text-cyan-400 mx-auto mb-4" />
                       <h3 className="text-2xl font-bold">Statistics Overview</h3>
                     </div>
                   </div>
@@ -317,8 +317,8 @@ const About = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <div className="flex items-center justify-center space-x-2 mb-4">
-              <Star className="w-5 h-5 text-purple-400" />
-              <span className="text-purple-400 font-medium">Reason</span>
+              <Star className="w-5 h-5 text-cyan-400" />
+              <span className="text-cyan-400 font-medium">Reason</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Reasons to <span className="gradient-text">Select Us</span>
@@ -350,8 +350,8 @@ const About = () => {
                 className="text-center"
               >
                 <div className="aspect-square bg-gray-800 rounded-xl overflow-hidden mb-6">
-                  <div className="w-full h-full bg-gradient-to-br from-purple-600/20 to-transparent flex items-center justify-center">
-                    <TrendingUp className="w-12 h-12 text-purple-400" />
+                  <div className="w-full h-full bg-gradient-to-br from-cyan-600/20 to-transparent flex items-center justify-center">
+                    <TrendingUp className="w-12 h-12 text-cyan-400" />
                   </div>
                 </div>
                 <h3 className="text-xl font-semibold mb-4">{reason.title}</h3>
@@ -367,8 +367,8 @@ const About = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <div className="flex items-center justify-center space-x-2 mb-4">
-              <Star className="w-5 h-5 text-purple-400" />
-              <span className="text-purple-400 font-medium">Testimonial</span>
+              <Star className="w-5 h-5 text-cyan-400" />
+              <span className="text-cyan-400 font-medium">Testimonial</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               What Our <span className="gradient-text">Clients Say</span>
@@ -386,11 +386,11 @@ const About = () => {
                 transition={{ delay: index * 0.2 }}
                 className="glass-card p-8 text-center"
               >
-                <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-purple-700 rounded-full mx-auto mb-6 flex items-center justify-center">
+                <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-cyan-700 rounded-full mx-auto mb-6 flex items-center justify-center">
                   <Users className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-semibold mb-1">{testimonial.name}</h3>
-                <p className="text-purple-400 mb-1">{testimonial.role}</p>
+                <p className="text-cyan-400 mb-1">{testimonial.role}</p>
                 <p className="text-gray-400 text-sm mb-4">{testimonial.company}</p>
                 <p className="text-gray-300 italic">"{testimonial.content}"</p>
               </motion.div>
@@ -400,7 +400,7 @@ const About = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 bg-gradient-to-r from-purple-900/50 to-transparent">
+      <section className="py-20 px-4 bg-gradient-to-r from-cyan-900/50 to-transparent">
         <div className="max-w-7xl mx-auto text-center">
           <motion.div {...fadeInUp}>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">

@@ -17,14 +17,14 @@ const Preloader = () => {
           className="mb-8"
         >
           <div className="flex items-center justify-center space-x-3 mb-4">
-            <div className="w-12 h-12 bg-purple-600 rounded-xl flex items-center justify-center">
+            <div className="w-12 h-12 bg-cyan-600 rounded-xl flex items-center justify-center">
               <span className="text-white font-bold text-2xl">S</span>
             </div>
             <h1 className="text-6xl font-bold text-white">
-              <span className="gradient-text">Saatify</span>
+              <span className="gradient-text">Symphonix</span>
             </h1>
           </div>
-          <p className="text-gray-300 text-lg">Smart Finance Solutions for Growth & Efficiency</p>
+          <p className="text-gray-300 text-lg">Innovative Tech Solutions for Growth & Efficiency</p>
         </motion.div>
         
         <motion.div
@@ -53,7 +53,7 @@ const Preloader = () => {
                   repeat: Infinity,
                   delay: i * 0.2,
                 }}
-                className="w-2 h-2 bg-purple-500 rounded-full"
+                className="w-2 h-2 bg-cyan-500 rounded-full"
               />
             ))}
           </div>

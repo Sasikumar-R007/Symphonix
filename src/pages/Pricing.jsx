@@ -123,15 +123,15 @@ const Pricing = () => {
     <div className="min-h-screen bg-gray-900 text-white">
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 px-4 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-cyan-900/20 to-transparent"></div>
         
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center">
             <div className="flex items-center justify-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center">
+              <div className="w-8 h-8 bg-cyan-600 rounded-lg flex items-center justify-center">
                 <span className="text-white text-sm">💰</span>
               </div>
-              <span className="text-purple-400 font-medium">Pricing</span>
+              <span className="text-cyan-400 font-medium">Pricing</span>
             </div>
             
             <motion.h1 {...fadeInUp} className="text-5xl md:text-6xl font-bold mb-6">
@@ -159,7 +159,7 @@ const Pricing = () => {
               <button
                 onClick={() => setIsAnnual(!isAnnual)}
                 className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors duration-200 ${
-                  isAnnual ? 'bg-purple-600' : 'bg-gray-600'
+                  isAnnual ? 'bg-cyan-600' : 'bg-gray-600'
                 }`}
               >
                 <span
@@ -192,20 +192,20 @@ const Pricing = () => {
                 transition={{ delay: index * 0.1 }}
                 className={`relative glass-card p-8 ${
                   plan.popular 
-                    ? 'border-purple-500 ring-2 ring-purple-500/20' 
-                    : 'hover:border-purple-500/50'
+                    ? 'border-cyan-500 ring-2 ring-cyan-500/20' 
+                    : 'hover:border-cyan-500/50'
                 } transition-colors duration-300`}
               >
                 {plan.popular && (
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                    <span className="bg-purple-600 text-white px-4 py-2 rounded-full text-sm font-medium">
+                    <span className="bg-cyan-600 text-white px-4 py-2 rounded-full text-sm font-medium">
                       Most Popular
                     </span>
                   </div>
                 )}
 
                 <div className="text-center mb-8">
-                  <div className="inline-flex items-center justify-center w-12 h-12 bg-purple-600 rounded-lg mb-4">
+                  <div className="inline-flex items-center justify-center w-12 h-12 bg-cyan-600 rounded-lg mb-4">
                     {plan.icon}
                   </div>
                   <h3 className="text-2xl font-bold mb-2">{plan.name}</h3>
@@ -226,8 +226,8 @@ const Pricing = () => {
                     to="/contact"
                     className={`w-full inline-block text-center py-3 px-6 rounded-lg font-semibold transition-colors duration-200 ${
                       plan.popular
-                        ? 'bg-purple-600 hover:bg-purple-700 text-white'
-                        : 'bg-gray-800 hover:bg-gray-700 text-white border border-gray-600 hover:border-purple-500'
+                        ? 'bg-cyan-600 hover:bg-cyan-700 text-white'
+                        : 'bg-gray-800 hover:bg-gray-700 text-white border border-gray-600 hover:border-cyan-500'
                     }`}
                   >
                     {plan.popular ? 'Start Free Trial' : 'Get Started'}
@@ -353,13 +353,13 @@ const Pricing = () => {
               >
                 <button
                   onClick={() => setOpenFaq(openFaq === index ? null : index)}
-                  className="w-full p-6 text-left flex items-center justify-between hover:text-purple-400 transition-colors duration-200"
+                  className="w-full p-6 text-left flex items-center justify-between hover:text-cyan-400 transition-colors duration-200"
                 >
                   <span className="text-lg font-semibold">{faq.question}</span>
                   {openFaq === index ? (
-                    <Minus className="w-5 h-5 text-purple-400 flex-shrink-0" />
+                    <Minus className="w-5 h-5 text-cyan-400 flex-shrink-0" />
                   ) : (
-                    <Plus className="w-5 h-5 text-purple-400 flex-shrink-0" />
+                    <Plus className="w-5 h-5 text-cyan-400 flex-shrink-0" />
                   )}
                 </button>
                 {openFaq === index && (
@@ -374,14 +374,14 @@ const Pricing = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 bg-gradient-to-r from-purple-900/50 to-transparent">
+      <section className="py-20 px-4 bg-gradient-to-r from-cyan-900/50 to-transparent">
         <div className="max-w-7xl mx-auto text-center">
           <motion.div {...fadeInUp}>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Ready to Transform Your Financial Management?
             </h2>
             <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
-              Join thousands of satisfied customers who have taken control of their finances with Saatify.
+              Join thousands of satisfied customers who have transformed their business with Symphonix.
             </p>
             <Link
               to="/contact"

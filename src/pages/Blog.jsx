@@ -112,7 +112,7 @@ const Blog = () => {
       case "Tax Strategies":
         return "bg-yellow-600/20 text-yellow-400 border-yellow-600/30"
       default:
-        return "bg-purple-600/20 text-purple-400 border-purple-600/30"
+        return "bg-cyan-600/20 text-cyan-400 border-cyan-600/30"
     }
   }
 
@@ -120,15 +120,15 @@ const Blog = () => {
     <div className="min-h-screen bg-gray-900 text-white">
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 px-4 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-cyan-900/20 to-transparent"></div>
         
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center">
             <div className="flex items-center justify-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center">
+              <div className="w-8 h-8 bg-cyan-600 rounded-lg flex items-center justify-center">
                 <span className="text-white text-sm">📝</span>
               </div>
-              <span className="text-purple-400 font-medium">Blogs</span>
+              <span className="text-cyan-400 font-medium">Blogs</span>
             </div>
             
             <motion.h1 {...fadeInUp} className="text-5xl md:text-6xl font-bold mb-6">
@@ -155,8 +155,8 @@ const Blog = () => {
                 key={index}
                 className={`px-6 py-3 rounded-full border transition-colors duration-200 ${
                   category.active 
-                    ? 'bg-purple-600 text-white border-purple-600' 
-                    : 'bg-gray-800/50 text-gray-300 border-gray-700 hover:border-purple-500/50'
+                    ? 'bg-cyan-600 text-white border-cyan-600' 
+                    : 'bg-gray-800/50 text-gray-300 border-gray-700 hover:border-cyan-500/50'
                 }`}
               >
                 {category.name} ({category.count})
@@ -171,7 +171,7 @@ const Blog = () => {
         <div className="max-w-7xl mx-auto">
           <motion.div {...fadeInUp} className="mb-12">
             <h2 className="text-3xl font-bold mb-4">Featured Articles</h2>
-            <div className="w-16 h-1 bg-gradient-to-r from-purple-600 to-purple-400 rounded-full"></div>
+            <div className="w-16 h-1 bg-gradient-to-r from-cyan-600 to-cyan-400 rounded-full"></div>
           </motion.div>
 
           <div className="grid lg:grid-cols-3 gap-8 mb-16">
@@ -180,11 +180,11 @@ const Blog = () => {
                 key={post.id}
                 {...fadeInUp}
                 transition={{ delay: index * 0.1 }}
-                className="glass-card overflow-hidden hover:border-purple-500/50 transition-colors duration-300 group"
+                className="glass-card overflow-hidden hover:border-cyan-500/50 transition-colors duration-300 group"
               >
                 <div className="relative overflow-hidden">
                   <div className="aspect-video bg-gray-800 flex items-center justify-center">
-                    <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-purple-700 rounded-lg flex items-center justify-center">
+                    <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-cyan-700 rounded-lg flex items-center justify-center">
                       <ExternalLink className="w-8 h-8 text-white" />
                     </div>
                   </div>
@@ -194,7 +194,7 @@ const Blog = () => {
                     </span>
                   </div>
                   <div className="absolute top-4 right-4">
-                    <button className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                    <button className="w-8 h-8 bg-cyan-600 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                       <ExternalLink className="w-4 h-4 text-white" />
                     </button>
                   </div>
@@ -213,7 +213,7 @@ const Blog = () => {
                     <span>{post.readTime}</span>
                   </div>
                   
-                  <h3 className="text-xl font-bold mb-3 group-hover:text-purple-400 transition-colors duration-200">
+                  <h3 className="text-xl font-bold mb-3 group-hover:text-cyan-400 transition-colors duration-200">
                     {post.title}
                   </h3>
                   
@@ -221,7 +221,7 @@ const Blog = () => {
                     {post.excerpt}
                   </p>
                   
-                  <button className="flex items-center space-x-2 text-purple-400 hover:text-purple-300 transition-colors duration-200">
+                  <button className="flex items-center space-x-2 text-cyan-400 hover:text-cyan-300 transition-colors duration-200">
                     <span>Read More</span>
                     <ArrowRight className="w-4 h-4" />
                   </button>
@@ -237,7 +237,7 @@ const Blog = () => {
         <div className="max-w-7xl mx-auto">
           <motion.div {...fadeInUp} className="mb-12">
             <h2 className="text-3xl font-bold mb-4">All Articles</h2>
-            <div className="w-16 h-1 bg-gradient-to-r from-purple-600 to-purple-400 rounded-full"></div>
+            <div className="w-16 h-1 bg-gradient-to-r from-cyan-600 to-cyan-400 rounded-full"></div>
           </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -246,11 +246,11 @@ const Blog = () => {
                 key={post.id}
                 {...fadeInUp}
                 transition={{ delay: index * 0.1 }}
-                className="glass-card overflow-hidden hover:border-purple-500/50 transition-colors duration-300 group"
+                className="glass-card overflow-hidden hover:border-cyan-500/50 transition-colors duration-300 group"
               >
                 <div className="relative overflow-hidden">
                   <div className="aspect-video bg-gray-800 flex items-center justify-center">
-                    <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-purple-700 rounded-lg flex items-center justify-center">
+                    <div className="w-12 h-12 bg-gradient-to-r from-cyan-500 to-cyan-700 rounded-lg flex items-center justify-center">
                       <ExternalLink className="w-6 h-6 text-white" />
                     </div>
                   </div>
@@ -269,7 +269,7 @@ const Blog = () => {
                     <span>{post.readTime}</span>
                   </div>
                   
-                  <h3 className="text-lg font-bold mb-2 group-hover:text-purple-400 transition-colors duration-200 line-clamp-2">
+                  <h3 className="text-lg font-bold mb-2 group-hover:text-cyan-400 transition-colors duration-200 line-clamp-2">
                     {post.title}
                   </h3>
                   
@@ -277,7 +277,7 @@ const Blog = () => {
                     {post.excerpt}
                   </p>
                   
-                  <button className="flex items-center space-x-1 text-purple-400 hover:text-purple-300 transition-colors duration-200 text-sm">
+                  <button className="flex items-center space-x-1 text-cyan-400 hover:text-cyan-300 transition-colors duration-200 text-sm">
                     <span>Read More</span>
                     <ArrowRight className="w-3 h-3" />
                   </button>
@@ -289,7 +289,7 @@ const Blog = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 bg-gradient-to-r from-purple-900/50 to-transparent">
+      <section className="py-20 px-4 bg-gradient-to-r from-cyan-900/50 to-transparent">
         <div className="max-w-7xl mx-auto text-center">
           <motion.div {...fadeInUp}>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">

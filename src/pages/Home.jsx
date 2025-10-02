@@ -23,15 +23,15 @@ const Home = () => {
     <div className="min-h-screen bg-gray-900 text-white">
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 px-4 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-cyan-900/20 to-transparent"></div>
         
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center">
             {/* Version Badge */}
             <motion.div {...fadeInUp} className="mb-8">
-              <div className="inline-flex items-center space-x-2 bg-purple-600/20 border border-purple-500/30 rounded-full px-4 py-2">
-                <Rocket className="w-4 h-4 text-purple-400" />
-                <span className="text-purple-200 text-sm">V2.0 is now available</span>
+              <div className="inline-flex items-center space-x-2 bg-cyan-600/20 border border-cyan-500/30 rounded-full px-4 py-2">
+                <Rocket className="w-4 h-4 text-cyan-400" />
+                <span className="text-cyan-200 text-sm">V2.0 is now available</span>
               </div>
             </motion.div>
 
@@ -59,7 +59,7 @@ const Home = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Enter your email..."
-                  className="flex-1 px-6 py-4 bg-gray-800 border border-gray-700 rounded-full text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                  className="flex-1 px-6 py-4 bg-gray-800 border border-gray-700 rounded-full text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-500"
                   required
                 />
                 <button
@@ -86,7 +86,7 @@ const Home = () => {
               <div className="flex items-center justify-center space-x-4 mb-16">
                 <div className="flex -space-x-2">
                   {[1, 2, 3, 4].map((i) => (
-                    <div key={i} className="w-10 h-10 bg-gradient-to-r from-purple-500 to-purple-700 rounded-full border-2 border-gray-800 flex items-center justify-center">
+                    <div key={i} className="w-10 h-10 bg-gradient-to-r from-cyan-500 to-cyan-700 rounded-full border-2 border-gray-800 flex items-center justify-center">
                       <Users className="w-4 h-4 text-white" />
                     </div>
                   ))}
@@ -131,11 +131,11 @@ const Home = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <div className="flex items-center justify-center space-x-2 mb-4">
-              <Star className="w-5 h-5 text-purple-400" />
-              <span className="text-purple-400 font-medium">Features</span>
+              <Star className="w-5 h-5 text-cyan-400" />
+              <span className="text-cyan-400 font-medium">Features</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Experience the <span className="gradient-text">Saatify</span> Advantage
+              Experience the <span className="gradient-text">Symphonix</span> Advantage
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               Get the best features of Finance management. Grow your business with it
@@ -164,9 +164,9 @@ const Home = () => {
                 key={index}
                 {...fadeInUp}
                 transition={{ delay: index * 0.2 }}
-                className="glass-card p-8 text-center hover:border-purple-500/50 transition-colors duration-300"
+                className="glass-card p-8 text-center hover:border-cyan-500/50 transition-colors duration-300"
               >
-                <div className="text-purple-400 mb-4 flex justify-center">
+                <div className="text-cyan-400 mb-4 flex justify-center">
                   {feature.icon}
                 </div>
                 <h3 className="text-xl font-semibold mb-4">{feature.title}</h3>
@@ -178,7 +178,7 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 bg-gradient-to-r from-purple-900/50 to-transparent">
+      <section className="py-20 px-4 bg-gradient-to-r from-cyan-900/50 to-transparent">
         <div className="max-w-7xl mx-auto text-center">
           <motion.div {...fadeInUp}>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">

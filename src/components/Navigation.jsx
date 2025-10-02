@@ -45,10 +45,10 @@ const Navigation = () => {
             className="flex-shrink-0"
           >
             <Link to="/" className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center">
+              <div className="w-8 h-8 bg-cyan-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold">S</span>
               </div>
-              <h1 className="text-xl font-bold text-white">Saatify</h1>
+              <h1 className="text-xl font-bold text-white">Symphonix</h1>
             </Link>
           </motion.div>
 
@@ -66,8 +66,8 @@ const Navigation = () => {
                     to={item.href}
                     className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
                       location.pathname === item.href
-                        ? 'text-purple-400'
-                        : 'text-white hover:text-purple-300'
+                        ? 'text-cyan-400'
+                        : 'text-white hover:text-cyan-300'
                     }`}
                   >
                     {item.name}
@@ -84,7 +84,7 @@ const Navigation = () => {
           >
             <Link
               to="/contact"
-              className="hidden md:block bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-full transition-colors duration-200"
+              className="hidden md:block bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-2 rounded-full transition-colors duration-200"
             >
               Contact Us
             </Link>
@@ -116,8 +116,8 @@ const Navigation = () => {
               onClick={closeMenu}
               className={`block px-3 py-2 text-base font-medium w-full text-left transition-colors duration-200 ${
                 location.pathname === item.href
-                  ? 'text-purple-400'
-                  : 'text-white hover:text-purple-300'
+                  ? 'text-cyan-400'
+                  : 'text-white hover:text-cyan-300'
               }`}
             >
               {item.name}
@@ -126,7 +126,7 @@ const Navigation = () => {
           <Link
             to="/contact"
             onClick={closeMenu}
-            className="block w-full text-left px-3 py-2 text-base font-medium bg-purple-600 hover:bg-purple-700 text-white rounded mt-4 transition-colors duration-200"
+            className="block w-full text-left px-3 py-2 text-base font-medium bg-cyan-600 hover:bg-cyan-700 text-white rounded mt-4 transition-colors duration-200"
           >
             Contact Us
           </Link>

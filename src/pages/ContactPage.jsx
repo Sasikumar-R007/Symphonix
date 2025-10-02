@@ -63,7 +63,7 @@ const ContactPage = () => {
       icon: <Mail className="w-6 h-6" />,
       title: "Email Us",
       description: "Get in touch via email",
-      details: "hello@saatify.com",
+      details: "hello@symphonix.com",
       action: "Send Email"
     },
     {
@@ -108,8 +108,8 @@ const ContactPage = () => {
 
   const faqs = [
     {
-      question: "How quickly can I get started with Saatify?",
-      answer: "You can start using Saatify immediately with our free 14-day trial. Simply sign up, connect your accounts, and begin managing your finances in minutes."
+      question: "How quickly can I get started with Symphonix?",
+      answer: "You can start using Symphonix immediately with our free 14-day trial. Simply sign up, explore our services, and begin transforming your business in minutes."
     },
     {
       question: "What kind of support do you offer?",
@@ -130,7 +130,7 @@ const ContactPage = () => {
       name: "Sarah Johnson",
       role: "CFO",
       company: "TechCorp",
-      content: "Saatify has transformed how we manage our company finances. The automation features alone have saved us 20 hours per week.",
+      content: "Symphonix has transformed how we manage our technology infrastructure. Their innovative solutions have saved us 20 hours per week.",
       rating: 5
     },
     {
@@ -144,7 +144,7 @@ const ContactPage = () => {
       name: "Emily Davis",
       role: "Financial Advisor",
       company: "WealthManagement Co",
-      content: "I recommend Saatify to all my clients. The platform is intuitive, secure, and provides excellent insights for financial planning.",
+      content: "I recommend Symphonix to all my clients. Their solutions are intuitive, secure, and provide excellent results for digital transformation.",
       rating: 5
     }
   ]
@@ -153,15 +153,15 @@ const ContactPage = () => {
     <div className="min-h-screen bg-gray-900 text-white">
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 px-4 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-cyan-900/20 to-transparent"></div>
         
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center">
             <div className="flex items-center justify-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center">
+              <div className="w-8 h-8 bg-cyan-600 rounded-lg flex items-center justify-center">
                 <Mail className="w-5 h-5 text-white" />
               </div>
-              <span className="text-purple-400 font-medium">Contact</span>
+              <span className="text-cyan-400 font-medium">Contact</span>
               <span data-proof="CONTACT_OK_2025-09-15_T1" className="hidden">Proof</span>
             </div>
             
@@ -175,7 +175,7 @@ const ContactPage = () => {
               transition={{ delay: 0.2 }}
               className="text-xl text-gray-300 max-w-4xl mx-auto mb-8"
             >
-              Ready to take control of your finances? Get in touch with our team of financial experts and discover how Saatify can transform your financial management experience.
+              Ready to transform your business with technology? Get in touch with our team of experts and discover how Symphonix can elevate your digital presence.
             </motion.p>
           </div>
         </div>
@@ -199,16 +199,16 @@ const ContactPage = () => {
                 key={index}
                 {...fadeInUp}
                 transition={{ delay: index * 0.1 }}
-                className="glass-card p-8 text-center hover:border-purple-500/50 transition-colors duration-300 group"
+                className="glass-card p-8 text-center hover:border-cyan-500/50 transition-colors duration-300 group"
               >
-                <div className="text-purple-400 mb-6 flex justify-center group-hover:scale-110 transition-transform duration-200">
+                <div className="text-cyan-400 mb-6 flex justify-center group-hover:scale-110 transition-transform duration-200">
                   {method.icon}
                 </div>
                 <h3 className="text-xl font-bold mb-2">{method.title}</h3>
                 <p className="text-gray-400 mb-4">{method.description}</p>
                 <div className="text-white font-semibold mb-6">{method.details}</div>
                 {method.title === "Email Us" ? (
-                  <a href="mailto:hello@saatify.com" className="w-full btn-primary inline-block text-center">
+                  <a href="mailto:hello@symphonix.com" className="w-full btn-primary inline-block text-center">
                     {method.action}
                   </a>
                 ) : method.title === "Call Us" ? (
@@ -253,7 +253,7 @@ const ContactPage = () => {
                         required
                         value={formData.name}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:border-purple-500 focus:outline-none transition-colors duration-200"
+                        className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:border-cyan-500 focus:outline-none transition-colors duration-200"
                         placeholder="Your full name"
                       />
                     </div>
@@ -265,7 +265,7 @@ const ContactPage = () => {
                         required
                         value={formData.email}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:border-purple-500 focus:outline-none transition-colors duration-200"
+                        className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:border-cyan-500 focus:outline-none transition-colors duration-200"
                         placeholder="your.email@company.com"
                       />
                     </div>
@@ -279,7 +279,7 @@ const ContactPage = () => {
                         name="company"
                         value={formData.company}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:border-purple-500 focus:outline-none transition-colors duration-200"
+                        className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:border-cyan-500 focus:outline-none transition-colors duration-200"
                         placeholder="Company name"
                       />
                     </div>
@@ -290,7 +290,7 @@ const ContactPage = () => {
                         name="phone"
                         value={formData.phone}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:border-purple-500 focus:outline-none transition-colors duration-200"
+                        className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:border-cyan-500 focus:outline-none transition-colors duration-200"
                         placeholder="+1 (555) 123-4567"
                       />
                     </div>
@@ -303,7 +303,7 @@ const ContactPage = () => {
                       required
                       value={formData.subject}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:border-purple-500 focus:outline-none transition-colors duration-200"
+                      className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:border-cyan-500 focus:outline-none transition-colors duration-200"
                     >
                       <option value="">Select a subject</option>
                       <option value="demo">Request a Demo</option>
@@ -322,7 +322,7 @@ const ContactPage = () => {
                       rows={6}
                       value={formData.message}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:border-purple-500 focus:outline-none transition-colors duration-200 resize-vertical"
+                      className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:border-cyan-500 focus:outline-none transition-colors duration-200 resize-vertical"
                       placeholder="Tell us about your needs and how we can help..."
                     ></textarea>
                   </div>
@@ -346,7 +346,7 @@ const ContactPage = () => {
                 {offices.map((office, index) => (
                   <div key={index} className="glass-card p-6">
                     <div className="flex items-start space-x-4">
-                      <div className="text-purple-400">
+                      <div className="text-cyan-400">
                         <Building className="w-6 h-6" />
                       </div>
                       <div className="flex-1">
@@ -379,14 +379,14 @@ const ContactPage = () => {
                 <h3 className="text-xl font-bold mb-4">Need Immediate Help?</h3>
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
-                    <Headphones className="w-5 h-5 text-purple-400" />
+                    <Headphones className="w-5 h-5 text-cyan-400" />
                     <div>
                       <div className="font-semibold">24/7 Support</div>
                       <div className="text-gray-400 text-sm">Available for all plans</div>
                     </div>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <Globe className="w-5 h-5 text-purple-400" />
+                    <Globe className="w-5 h-5 text-cyan-400" />
                     <div>
                       <div className="font-semibold">Global Coverage</div>
                       <div className="text-gray-400 text-sm">Supporting 50+ countries</div>
@@ -422,7 +422,7 @@ const ContactPage = () => {
                   allowFullScreen=""
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Saatify Office Locations"
+                  title="Symphonix Office Locations"
                   className="w-full h-full"
                 ></iframe>
               </div>
@@ -435,13 +435,13 @@ const ContactPage = () => {
                   key={index}
                   {...fadeInUp}
                   transition={{ delay: 0.3 + index * 0.1 }}
-                  className="glass-card p-4 text-center hover:border-purple-500/50 transition-colors duration-300 cursor-pointer"
+                  className="glass-card p-4 text-center hover:border-cyan-500/50 transition-colors duration-300 cursor-pointer"
                   onClick={() => {
                     // In a real app, this would update the map to show the specific location
                     alert(`Showing ${office.city} office on map`)
                   }}
                 >
-                  <MapPin className="w-6 h-6 text-purple-400 mx-auto mb-2" />
+                  <MapPin className="w-6 h-6 text-cyan-400 mx-auto mb-2" />
                   <h3 className="font-semibold mb-1">{office.city}</h3>
                   <p className="text-gray-400 text-sm">{office.region}</p>
                 </motion.div>
@@ -459,7 +459,7 @@ const ContactPage = () => {
               Frequently Asked <span className="gradient-text">Questions</span>
             </h2>
             <p className="text-xl text-gray-300">
-              Quick answers to common questions about getting started with Saatify.
+              Quick answers to common questions about getting started with Symphonix.
             </p>
           </motion.div>
 
@@ -471,7 +471,7 @@ const ContactPage = () => {
                 transition={{ delay: index * 0.1 }}
                 className="glass-card p-6"
               >
-                <h3 className="text-lg font-semibold mb-3 text-purple-400">{faq.question}</h3>
+                <h3 className="text-lg font-semibold mb-3 text-cyan-400">{faq.question}</h3>
                 <p className="text-gray-300 leading-relaxed">{faq.answer}</p>
               </motion.div>
             ))}
@@ -487,7 +487,7 @@ const ContactPage = () => {
               What Our <span className="gradient-text">Clients Say</span>
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Don't just take our word for it. See what our satisfied customers have to say about their experience with Saatify.
+              Don't just take our word for it. See what our satisfied customers have to say about their experience with Symphonix.
             </p>
           </motion.div>
 
@@ -508,12 +508,12 @@ const ContactPage = () => {
                 <p className="text-gray-300 mb-6 italic">"{testimonial.content}"</p>
                 
                 <div className="flex items-center space-x-3">
-                  <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-purple-700 rounded-full flex items-center justify-center">
+                  <div className="w-12 h-12 bg-gradient-to-r from-cyan-500 to-cyan-700 rounded-full flex items-center justify-center">
                     <Users className="w-6 h-6 text-white" />
                   </div>
                   <div>
                     <div className="font-semibold">{testimonial.name}</div>
-                    <div className="text-purple-400 text-sm">{testimonial.role}</div>
+                    <div className="text-cyan-400 text-sm">{testimonial.role}</div>
                     <div className="text-gray-400 text-sm">{testimonial.company}</div>
                   </div>
                 </div>
@@ -524,21 +524,21 @@ const ContactPage = () => {
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 px-4 bg-gradient-to-r from-purple-900/50 to-transparent">
+      <section className="py-20 px-4 bg-gradient-to-r from-cyan-900/50 to-transparent">
         <div className="max-w-7xl mx-auto text-center">
           <motion.div {...fadeInUp}>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Ready to Get Started?
             </h2>
             <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
-              Join thousands of satisfied customers who have transformed their financial management with Saatify. Start your free trial today.
+              Join thousands of satisfied customers who have transformed their financial management with Symphonix. Start your free trial today.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <button className="btn-primary inline-flex items-center space-x-2 text-lg px-8 py-4">
                 <span>Start Free Trial</span>
                 <ArrowRight className="w-5 h-5" />
               </button>
-              <button className="text-purple-400 hover:text-purple-300 inline-flex items-center space-x-2 transition-colors duration-200">
+              <button className="text-cyan-400 hover:text-cyan-300 inline-flex items-center space-x-2 transition-colors duration-200">
                 <MessageSquare className="w-5 h-5" />
                 <span>Schedule Demo</span>
               </button>
